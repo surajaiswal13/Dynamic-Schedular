@@ -1,0 +1,9 @@
+first we install django-celery-beat==2.2.1
+
+then we add it in third_party installed apps
+
+then we migrate "py manage.py migrate django_celery_beat"
+
+then we add < CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler' > to base
+
+then we check with admin panel
